@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo de Productos | NutriNac</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f0f4c3;
+    }
+
+    header {
+      background-color: #33691e;
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      margin: 0;
+    }
+
+    header p {
+      margin: 10px 0 0;
+      font-size: 1.1em;
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .main-container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+
+    aside {
+      width: 250px;
+      padding: 20px;
+      background-color: #dcedc8;
+      box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      margin-right: 20px;
+    }
+
+    aside h2 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+      color: #33691e;
+    }
+
+    aside ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    aside li {
+      margin: 8px 0;
+    }
+
+    aside a {
+      color: #33691e;
+      text-decoration: none;
+    }
+
+    aside a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      flex-grow: 1;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    article {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    article:hover {
+      transform: scale(1.02);
+    }
+
+    article img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    article .contenido {
+      padding: 15px;
+    }
+
+    article h3 {
+      margin: 10px 0 5px;
+      color: #2e7d32;
+    }
+
+    article p {
+      font-size: 0.9em;
+      color: #555;
+    }
+
+    article span {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+      color: #4caf50;
+    }
+
+    footer {
+      background-color: #33691e;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Tu espacio de bienestar, nutrición y salud</h1>
+    <nav>
+    </nav>
+  </header>
+
+  <div class="main-container">
+    <aside>
+      <h2>Categorías</h2>
+      <ul>
+        <li><a href="jugos naturales.html">Bebidas naturales</a></li>
+        <li><a href="bebidas_energeticas.html">Energizantes</a></li>
+      </ul>
+    </aside>
+
+    <section>
+      <article>
+        <img src="https://mui.today/__export/1609800775040/sites/mui/img/2021/01/04/barras_energxticas.jpg_375236786.jpg" alt="Barra de Energía">
+        <div class="contenido">
+          <h3>Barra de Energía Natural</h3>
+          <p>Hecha con avena, nuez, miel y chía. Ideal para llevar.</p>
+          <span>$35.00</span>
+        </div>
+      </article>
+
+      <article>
+        <img src="https://tse3.mm.bing.net/th?id=OIP.i0ADEbvewNZOyp9cjeBpSwHaFI&pid=Api&P=0&h=180" alt="Jugo Verde Detox">
+        <div class="contenido">
+          <h3>Jugo Detox Verde</h3>
+          <p>Con espinaca, manzana verde, jengibre y limón.</p>
+          <span>$45.00</span>
+        </div>
+      </article>
+
+      <article>
+        <img src="https://http2.mlstatic.com/D_NQ_NP_851149-MLB41408757039_042020-F.jpg" alt="Mix de Frutas Secas">
+        <div class="contenido">
+          <h3>Mix de Frutas Secas</h3>
+          <p>Combinación de almendras, pasas, arándanos y plátano seco.</p>
+          <span>$30.00</span>
+        </div>
+      </article>
+
+      <article>
+        <img src="https://www.clarin.com/img/2023/01/29/p5nSxGP9L_2000x1500__1.jpg" alt="Avena con Cacao y Chía">
+        <div class="contenido">
+          <h3>Avena con Chía y Cacao</h3>
+          <p>Desayuno listo para consumir, alto en fibra y energía.</p>
+          <span>$40.00</span>
+        </div>
+      </article>
+
+      <article>
+        <img src="http://thebeachhousekitchen.com/wp-content/uploads/2016/08/Mango-Peach-Smoothie-2-3.jpg" alt="Smoothie de Mango">
+        <div class="contenido">
+          <h3>Smoothie de Mango</h3>
+          <p>100% natural, sin azúcar añadida. Refrescante y nutritivo.</p>
+          <span>$38.00</span>
+        </div>
+      </article>
+
+      <article>
+        <img src="https://jetextramar.com/wp-content/uploads/2021/06/receta-de-ensalada-de-quinoa.jpg" alt="Ensalada de Quinoa">
+        <div class="contenido">
+          <h3>Ensalada de Quinoa</h3>
+          <p>Quinoa orgánica con verduras frescas y aderezo ligero.</p>
+          <span>$50.00</span>
+        </div>
+      </article>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 NutriNac — Nutrición para la comunidad COBACH</p>
+  </footer>
+
+</body>
+</html>
