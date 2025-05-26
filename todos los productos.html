@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Snacks y Bebidas Saludables</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9fdfb;
+      color: #333;
+      text-align: center;
+      padding: 3rem;
+    }
+
+    header {
+      background-color: #2c7a57;
+      color: white;
+      padding: 1.5rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    .section {
+      margin-top: 3rem;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      color: #34a853;
+    }
+
+    .beverage-list, .snack-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+
+    .beverage-item, .snack-item {
+      width: 250px;
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .beverage-item img, .snack-item img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .button-container a {
+      text-decoration: none;
+    }
+
+    .button-container button {
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      margin: 1rem;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .toggle-info-btn {
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background-color: #34a853;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .toggle-info-btn:hover {
+      background-color: #2c7a57;
+    }
+
+    footer {
+      margin-top: 3rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Explora Snacks y Bebidas Saludables</h1>
+    <p>Descubre opciones deliciosas y saludables para tu día a día.</p>
+  </header>
+
+  <!-- Botón de inicio -->
+  <div class="button-container">
+    <a href="productos.html"><button>Volver al Inicio</button></a>
+  </div>
+
+  <!-- Sección de Snacks Saludables -->
+  <div class="section">
+    <h2>Snacks Saludables</h2>
+    <div class="snack-list">
+      <!-- Energéticos -->
+      <div class="snack-item">
+        <img src="https://cdn.pixabay.com/photo/2016/03/05/20/02/nuts-1239423_1280.jpg" alt="Frutos secos">
+        <p>Frutos secos</p>
+      </div>
+      <div class="snack-item">
+        <img src="https://cdn.pixabay.com/photo/2018/05/08/08/49/banana-3382702_1280.jpg" alt="Banana">
+        <p>Banana</p>
+      </div>
+      <!-- Bajos en Calorías -->
+      <div class="snack-item">
+        <img src="https://cdn.pixabay.com/photo/2015/03/24/17/25/carrot-688837_1280.jpg" alt="Palitos de zanahoria">
+        <p>Palitos de zanahoria</p>
+      </div>
+      <div class="snack-item">
+        <img src="https://cdn.pixabay.com/photo/2016/02/23/17/38/apple-1218157_1280.png" alt="Manzana">
+        <p>Manzana</p>
+      </div>
+      <!-- Caseros -->
+      <div class="snack-item">
+        <img src="https://cdn.pixabay.com/photo/2020/04/16/08/38/kale-5049568_1280.jpg" alt="Chips de kale">
+        <p>Chips de kale</p>
+      </div>
+      <div class="snack-item">
+        <img src="https://cdn.pixabay.com/photo/2018/02/08/15/31/oatmeal-3138404_1280.jpg" alt="Bolitas de avena">
+        <p>Bolitas de avena</p>
+      </div>
+      <div class="snack-item">
+        <img src="https://cdn.pixabay.com/photo/2020/01/07/12/26/avocado-toast-4747018_1280.jpg" alt="Tostadas de aguacate">
+        <p>Tostadas de aguacate</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sección de Bebidas Naturales -->
+  <div class="section">
+    <h2>Bebidas Naturales</h2>
+    <div class="beverage-list">
+      <!-- Hidratantes -->
+      <div class="beverage-item">
+        <img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/drinking-water-1239253_1280.jpg" alt="Agua">
+        <p>Agua</p>
+      </div>
+      <div class="beverage-item">
+        <img src="https://cdn.pixabay.com/photo/2017/09/26/13/44/water-2782960_1280.jpg" alt="Agua con limón">
+        <p>Agua con limón</p>
+      </div>
+      <div class="beverage-item">
+        <img src="https://cdn.pixabay.com/photo/2018/04/16/09/15/coconut-3328229_1280.jpg" alt="Agua de coco">
+        <p>Agua de coco</p>
+      </div>
+      <!-- Energéticas -->
+      <div class="beverage-item">
+        <img src="https://cdn.pixabay.com/photo/2018/04/29/22/56/orange-juice-3366469_1280.jpg" alt="Jugo de naranja">
+        <p>Jugo de naranja</p>
+      </div>
+      <div class="beverage-item">
+        <img src="https://cdn.pixabay.com/photo/2017/07/28/14/28/juice-2549490_1280.jpg" alt="Jugo de remolacha">
+        <p>Jugo de remolacha</p>
+      </div>
+      <div class="beverage-item">
+        <img src="https://cdn.pixabay.com/photo/2015/04/08/13/13/smoothie-712665_1280.jpg" alt="Batido de plátano">
+        <p>Batido de plátano</p>
+      </div>
+      <!-- Digestivas -->
+      <div class="beverage-item">
+        <img src="https://cdn.pixabay.com/photo/2015/06/19/20/13/green-tea-815678_1280.jpg" alt="Té verde">
+        <p>Té verde</p>
+      </div>
+      <div class="beverage-item">
+        <img src="https://cdn.pixabay.com/photo/2018/02/25/17/30/tea-3188223_1280.jpg" alt="Infusión de jengibre">
+        <p>Infusión de jengibre</p>
+      </div>
+      <div class="beverage-item">
+        <img src="https://cdn.pixabay.com/photo/2018/03/21/21/29/mint-3244583_1280.jpg" alt="Té de menta">
+        <p>Té de menta</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sección de Bebidas Energéticas -->
+  <div class="section">
+    <h2>Bebidas Energéticas Beneficiosas</h2>
+    <div class="beverage-list">
+      <!-- Bebida energética beneficiosa -->
+      <div class="beverage-item">
+        <img src="https://cdn.pixabay.com/photo/2018/07/03/14/25/green-3537409_1280.jpg" alt="Té verde">
+<p>Té verde</p>
+<p>Beneficios: Mejora la concentración y reduce la fatiga.</p>
+</div>
+<div class="beverage-item">
+<img src="https://cdn.pixabay.com/photo/2017/07/19/16/43/coffee-2528570_1280.jpg" alt="Café Natural">
+<p>Café Natural</p>
+<p>Estimulante natural con beneficios antioxidantes.</p>
+</div>
+</div>
+<h2>Bebidas Energéticas Dañinas</h2>
+<div class="beverage-list">
+  <!-- Monster Energy -->
+  <div class="beverage-item">
+    <img src="https://cdn.pixabay.com/photo/2019/05/07/19/10/monster-4181113_1280.jpg" alt="Monster Energy">
+    <p>Monster Energy</p>
+    <p>Contiene 160mg de cafeína y altos niveles de azúcar. Aumenta el riesgo de diabetes.</p>
+  </div>
+  <!-- Red Bull -->
+  <div class="beverage-item">
+    <img src="https://cdn.pixabay.com/photo/2017/10/24/22/32/red-bull-2880002_1280.jpg" alt="Red Bull Sugarfree">
+    <p>Red Bull Sugarfree</p>
+    <p>Contiene 80mg de cafeína, pero los edulcorantes artificiales pueden afectar el metabolismo.</p>
+  </div>
+</div>
+</div> <footer> <p>Gracias por explorar opciones saludables para tu vida diaria 🍎</p> 
+</footer> 
+</body> 
+</html> 
